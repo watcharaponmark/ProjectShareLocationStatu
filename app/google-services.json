@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "189725488977",
+    "project_id": "projectsharelocationstatu"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189725488977:android:6aca3cf373349a32",
+        "android_client_info": {
+          "package_name": "biz.markgo.senior_project.projectsharelocationstatu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189725488977-klu64eh1a64jgsa3hv19amhiu1ihcqbf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbAAVWDTLCN4LuYP6nWK9MSEHnw9zB9kk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

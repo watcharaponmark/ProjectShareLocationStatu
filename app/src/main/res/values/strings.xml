@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ProjectShareLocationStatu</string>
+    <string name="loding">loding</string>
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+
+    <string name="lbl_you_are_at">YOU ARE AT</string>
+    <string name="btn_get_location">GET MY LOCATION</string>
+    <string name="btn_start_location_updates">START LOCATION UPDATES</string>
+    <string name="btn_stop_location_updates">STOP LOCATION UPDATES</string>
+    <string name="Map_api_key">AIzaSyAMFNqzykZa7u38Aad73GEbTLKtgD0Vebo</string>
+
+</resources>
