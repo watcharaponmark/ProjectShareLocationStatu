@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity  implements GoogleApiClient.
     private ProgressDialog mProgressDialog;
     private SignInButton btnSignIn;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,7 +89,7 @@ public class MainActivity extends AppCompatActivity  implements GoogleApiClient.
         tvRegisterLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent registerIntent = new Intent(MainActivity.this, RegisterActivity.class);
+                Intent registerIntent = new Intent(MainActivity.this,RegisterActivity.class);
                 MainActivity.this.startActivity(registerIntent);
             }
         });
@@ -133,6 +134,17 @@ public class MainActivity extends AppCompatActivity  implements GoogleApiClient.
                 LoginRequest loginRequest = new LoginRequest(username, password, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
                 queue.add(loginRequest);
+            }
+        });
+       final Button bt_Nologin=(Button) findViewById(R.id.bt_Nologin);
+
+        bt_Nologin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,Home.class);
+                intent.putExtra("name_nologin","Noname");
+                intent.putExtra("statusLogin","Nologin");
+                startActivity(intent);
             }
         });
     }

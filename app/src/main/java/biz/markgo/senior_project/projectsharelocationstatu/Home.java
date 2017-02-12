@@ -87,6 +87,9 @@ public class Home extends AppCompatActivity implements GoogleApiClient.OnConnect
         String username = intent.getStringExtra("username");
         int age = intent.getIntExtra("age", -1);
 
+        //Nologin
+        String nameNologin = intent.getStringExtra("name_nologin");
+
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
@@ -137,6 +140,17 @@ public class Home extends AppCompatActivity implements GoogleApiClient.OnConnect
                 }
             });
             Namesnippet=personName;
+        }else if(statusLogin.equals("Nologin")){
+            txtName.setText(nameNologin);
+            txtEmail.setText(nameNologin);
+            btnSignOut.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent_RevokeAccess = new Intent(Home.this, MainActivity.class);
+                    startActivity(intent_RevokeAccess);
+                }
+            });
+            Namesnippet=nameNologin;
         }
        /* btnRevokeAccess.setOnClickListener(new View.OnClickListener() {
             @Override
